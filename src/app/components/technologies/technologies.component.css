@@ -1,0 +1,55 @@
+.tech-container {
+    padding: 6rem 6rem 2rem 6rem;
+}
+
+.tech-title-container{
+    display: flex;
+    justify-content: center;
+}
+
+.tech-title {
+    color: #B6C7C6;
+    font-size: 4.5rem;
+    margin-bottom: 20px;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    row-gap: 30px;
+}
+
+.tech-card {
+    grid-column: span 1;
+    width: 230px;
+    height: 230px;
+    border-radius: 30px;
+    border: 2px solid #182f47;
+    padding-top: 20px;
+    cursor: pointer;
+    transition: ease-in 0.2s;
+    background-color: #021932f1;
+}
+
+.tech-card:hover {
+    transform: scale(1.25);
+}
+
+.tech-logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.tech-logo img{
+    width: 135px;
+    height: 135px;
+}
+
+.tech-name {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    color: #B6C7C6;
+}

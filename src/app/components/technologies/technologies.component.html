@@ -1,0 +1,19 @@
+<div class="tech-container">
+    <div class="tech-title-container">
+        <div class="tech-title">Skills & Tech</div>
+    </div>
+    
+    <div class="tech-grid">
+        @for (tech of technologiesObject; track $index) {
+            <div class="tech-card">
+                <div class="tech-logo">
+                    <img [src]="tech.icon" alt="">
+                </div>
+                <div class="tech-name">
+                    {{tech.name}}
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
