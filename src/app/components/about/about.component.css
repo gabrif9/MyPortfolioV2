@@ -1,0 +1,32 @@
+.about-container {
+    padding: 6rem;
+    /* width: 100%; */
+    position: absolute;
+}
+
+.title {
+    color: #0DC7B8;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.name {
+    color: #B6C7C6;
+    font-weight: 500;
+    font-size: 6rem;
+}
+
+.description {
+    color: #B6C7C6;
+    font-weight: 200;
+    font-size: 1.5rem;
+    width: 70%;  
+}
+
+.about-content{
+    position: relative;
+    left: 50%;
+    top: 200px;
+    width: 70%;
+    transform: translateX(-50%);
+}
