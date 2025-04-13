@@ -1,0 +1,20 @@
+.menu-entries {
+    display: flex;
+}
+
+.menu-option{
+    color: #B6C7C6;
+    padding: 0.7rem 1.5rem; 
+    font-size: 1.2rem;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    margin-left: 3rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.menu-entries button:hover {
+    background-color: #021932f1;
+    transition: ease-in 0.3s;
+}
