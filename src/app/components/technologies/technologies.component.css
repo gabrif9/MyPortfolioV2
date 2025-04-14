@@ -20,6 +20,24 @@
     row-gap: 30px;
 }
 
+@media screen and (max-width: 1400px) {
+    .tech-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .tech-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .tech-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 .tech-card {
     grid-column: span 1;
     width: 230px;
