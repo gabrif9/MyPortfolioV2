@@ -23,10 +23,53 @@
     width: 70%;  
 }
 
+@media screen and (max-width: 1400px) {
+    .description {
+        width: 100%; 
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .name {
+        font-size: 4rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+}
+
 .about-content{
-    position: relative;
     left: 50%;
     top: 200px;
     width: 70%;
     transform: translateX(-50%);
+    position: relative;
+}
+
+@media screen and (max-width: 1400px) {
+    .about-content{
+        width: 100%;
+        top: 150px;
+    }
+}
+
+.about-links {
+    position: relative;
+    margin-top: 20px;
+}
+
+.about-links img {
+    width: 30px;
+    height: 30px;
+    fill: #becfce;
+    cursor: pointer;
+}
+
+.about-links img:nth-child(n + 2) {
+    margin-left: 15px;
+}
+
+.about-links a {
+    margin-left: 15px;
 }
