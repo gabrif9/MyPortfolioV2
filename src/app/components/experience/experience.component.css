@@ -20,6 +20,11 @@
     width: 900px;
     height: auto;
     box-shadow: 0px 0px 19px -5px rgba(24,47,71,0.77);
+    cursor: pointer;
+}
+
+.experience-item:hover {
+    box-shadow: 0px 0px 19px -5px rgba(50, 64, 80, 0.77);
 }
 
 .experience-header {
@@ -39,5 +44,24 @@ hr {
 }
 
 .experience-title {
+    display: flex;
     font-weight: 600;
+    align-items: center;
 }
+
+.experience-title span {
+    margin-left: 10px;
+    display: none;
+}
+
+
+.experience-item:hover .experience-title{
+    color: #0DC7B8;
+}
+
+.experience-item:hover span{
+    color: #0DC7B8;
+    display: flex;
+}
+
+

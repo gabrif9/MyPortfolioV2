@@ -13,7 +13,12 @@ export class ExperienceComponent {
     "Angular",
     "Typescript",
     "Keycloak",
-    
+    "Docker",
+    "Moqups"
   ]
+
+  navigate(url: string) {
+    window.open(url, "_blank")
+  }
 
 }
