@@ -6,4 +6,11 @@
     <div class="menu">
         <app-menu></app-menu>
     </div>
+    <div (click)="toggleSidebar('')" class="menu-icon">
+        <span class="material-symbols-outlined">
+            menu
+        </span>
+    </div>
 </header>
+
+<app-sidebar [isVisibleInputSignal]="showSidebarSignal()" (closeSidebarOutput)="toggleSidebar($event)"></app-sidebar>
