@@ -4,17 +4,37 @@
 
 .menu-option{
     color: #B6C7C6;
-    padding: 0.7rem 1.5rem; 
-    font-size: 1.2rem;
+    padding: 0.7rem 1rem; 
+    font-size: 1rem;
     text-align: center;
     border: none;
     background-color: transparent;
-    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
     border-radius: 20px;
     cursor: pointer;
 }
 
+.menu-option:nth-child(n+2) {
+    margin-left: 1.5rem;
+}
+
 .menu-entries button:hover {
     background-color: #021932f1;
-    transition: ease-in 0.3s;
+    transition: ease-in-out 0.3s;
+}
+
+.menu-underscore {
+    height: 2px;
+    background-color: #B6C7C6;
+    width: 20%;
+    transition: width 0.3s;
+}
+
+button:hover .menu-underscore{
+    width: 90%;
+    background-color: #0DC7B8;
 }
