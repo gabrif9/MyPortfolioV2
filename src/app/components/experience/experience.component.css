@@ -4,6 +4,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .experience-list {
@@ -17,15 +19,77 @@
     padding: 1.3rem;
     border: 2px solid #182f47;
     border-radius: 20px;
-    width: 900px;
+    width: 70%;
     height: auto;
     box-shadow: 0px 0px 19px -5px rgba(24,47,71,0.77);
     cursor: pointer;
 }
 
-.experience-item:hover {
-    box-shadow: 0px 0px 19px -5px rgba(50, 64, 80, 0.77);
+@media screen and (min-width: 700px){
+    .experience-item:hover {
+        box-shadow: 0px 0px 19px -5px rgba(50, 64, 80, 0.77);
+    }
+    
+    .experience-item:hover .experience-title{
+        color: #0DC7B8;
+    }
+    
+    .experience-item:hover span{
+        color: #0DC7B8;
+        display: flex;
+    }
 }
+
+.experience-title span {
+    margin-left: 10px;
+    display: none;
+}
+
+@media screen and (max-width: 1030px) {
+    .experience-item {
+        width: 600px;
+    }
+}
+
+
+.experience-section-title {
+    color: #B6C7C6;
+    font-size: 4.5rem;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 700px){
+    .experience-item {
+        padding: 1.3rem;
+        border: none;
+        border-radius: none;
+        /* height: auto; */
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .experience-section-title {
+        font-size: 3rem;
+    }
+
+    .experience-container {
+        padding: 0;
+        flex-shrink: 1;
+    }
+
+    .experience-list {
+        /* border: 2px solid green; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experience-item span{
+        display: flex;
+    }
+}
+
+
 
 .experience-header {
     display: flex;
@@ -39,7 +103,7 @@
 
 hr {
     margin: 10px auto;
-    width: 90%;
+    width: 100%;
 
 }
 
@@ -49,19 +113,9 @@ hr {
     align-items: center;
 }
 
-.experience-title span {
-    margin-left: 10px;
-    display: none;
-}
 
 
-.experience-item:hover .experience-title{
-    color: #0DC7B8;
-}
 
-.experience-item:hover span{
-    color: #0DC7B8;
-    display: flex;
-}
+
 
 
