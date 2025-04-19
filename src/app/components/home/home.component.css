@@ -1,0 +1,80 @@
+.home-container {
+    padding: 6rem;
+    margin-bottom: 50vh;
+}
+
+@media screen and (max-width: 600px) {
+    .home-container {
+        padding: 6rem 3rem ;
+    }
+}
+
+.title {
+    color: #0DC7B8;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.name {
+    color: #B6C7C6;
+    font-weight: 500;
+    font-size: 6rem;
+}
+
+.description {
+    color: #b6c7c6ba;
+    font-weight: 300;
+    font-size: 1.5rem;
+    width: 70%;  
+}
+
+@media screen and (max-width: 1400px) {
+    .description {
+        width: 100%; 
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .name {
+        font-size: 4rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+}
+
+.home-content{
+    left: 50%;
+    top: 200px;
+    width: 70%;
+    transform: translateX(-50%);
+    position: relative;
+}
+
+@media screen and (max-width: 1400px) {
+    .home-content{
+        width: 100%;
+        top: 150px;
+    }
+}
+
+.home-links {
+    position: relative;
+    margin-top: 20px;
+}
+
+.home-links img {
+    width: 30px;
+    height: 30px;
+    fill: #becfce;
+    cursor: pointer;
+}
+
+.home-links img:nth-child(n + 2) {
+    margin-left: 15px;
+}
+
+.home-links a {
+    margin-left: 15px;
+}

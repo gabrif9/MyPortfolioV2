@@ -8,8 +8,4 @@ import { Component } from '@angular/core';
 })
 export class AboutComponent {
 
-  navigate(url: string) {
-    window.open(url, "_blank")
-  }
-
 }
