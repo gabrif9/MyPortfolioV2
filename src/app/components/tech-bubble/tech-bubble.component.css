@@ -1,6 +1,9 @@
 .bubble-list {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 10px;
+    width: 100%;
+    column-gap: 10px;
 }
 
 .bubble-item {
@@ -11,6 +14,15 @@
     font-weight: 500;
 }
 
-.bubble-item:nth-child(n + 2) {
-    margin-left: 10px;
-}
+
+@media screen and (max-width: 700px) {
+    .bubble-list {
+      width: 100%;
+      justify-content: start;
+    }
+
+    .bubble-item {
+        margin-top: 10px;
+    }
+  }
+
