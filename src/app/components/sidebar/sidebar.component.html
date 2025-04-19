@@ -1,0 +1,29 @@
+<div
+ class="sidebar"
+ [@slideInOut]="isVisible ? 'in' : 'out'"
+ [class.visible]="isVisible"
+ (@slideInOut.done)="onAnimationDone($event)"
+ >
+ <div (click)="closeSidebarOutput.emit('')" class="close-button">
+    <span  class="material-symbols-outlined">
+        close
+    </span>
+</div>
+    <div>
+        
+        <div class="sidebar-menu-list">
+            <ul>
+                <li (click)="scrollTo('about')" class="sidebar-item">
+                    ABOUT
+                </li>
+                <li (click)="scrollTo('technologies')" class="sidebar-item">
+                    TECHNOLOGIES
+                </li>
+                <li (click)="scrollTo('experience')" class="sidebar-item">
+                    EXPERIENCE
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+</div>
